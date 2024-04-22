@@ -18,12 +18,12 @@ type SocialLink = {
 }
 
 export const siteConfig: Config = {
-  title: "Astro Theme Cody",
-  description: "",
+  title: "Reluctant Go Musings",
+  description: "I'm not quite sure what this will be yet..",
   lang: "en-GB",
   profile: {
-    author: "Amy Dang",
-    description: "your bio description"
+    author: "Matt Roberts",
+    description: "A blog about Go, I think.."
   }
 }
 
@@ -34,25 +34,10 @@ export const siteConfig: Config = {
 */
 export const socialLinks: Array<SocialLink> = [
   {
-    icon: "mdi:github",
-    friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
-  },
-  {
-    icon: "mdi:linkedin",
-    friendlyName: "LinkedIn",
-    link: "#",
-  },
-  {
     icon: "mdi:email",
-    friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    friendlyName: "email here",
+    link: "mailto:roberts.mattroberts@gmail.com",
   },
-  {
-    icon: "mdi:rss",
-    friendlyName: "rss",
-    link: "/rss.xml"
-  }
 ];
 
 export const NAV_LINKS: Array<{ title: string, path: string }> = [
@@ -68,8 +53,4 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
     title: "Blog",
     path: "/blog",
   },
-  {
-    title: "Projects",
-    path: '/projects'
-  }
 ];
