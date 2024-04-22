@@ -3,7 +3,7 @@ import { toString } from 'mdast-util-to-string';
 
 // https://docs.astro.build/en/recipes/reading-time/#recipe
 export function remarkReadingTime() {
-  return function (tree, { data }) {
+  return function (tree: any, { data }: { data: any }) {
     const textOnPage = toString(tree);
     const readingTime = getReadingTime(textOnPage);
     // readingTime.text will give us minutes read as a friendly string,
